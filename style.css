@@ -60,6 +60,10 @@ header {
     filter: grayscale();
 }
 
+.banner-image img:hover {
+  filter: none;
+}
+
 img {
   max-width: 100%;
 }
@@ -72,41 +76,41 @@ img {
     position: relative;
 }
 
-.banner-caption:first-child {
+.banner-title {
     width: 100%;
+    position: absolute;
     top: 25vw;
+    height: 21vw;
+}
+
+.banner-title-text:first-child {
+    position: absolute;
     left: 10vw;
     transition: all 50ms;
 }
 
-.banner-caption:nth-child(2) {
-    width: 100%;
-    top: 34.5vw;
+.banner-title-text:last-child {
+    position: absolute;
     left: 37.5vw;
+    top: 9vw;
     transition: all 50ms;
 }
 
-.banner-caption:last-child {
+.banner-caption {
     width: 80vw;
     font-size: 2vw;
     font-weight: 100;
     top: 63vw;
     left: 10vw;
-}
-
-.banner-caption {
     position: absolute;
 }
 
-.banner-image img:hover {
-    filter: none;
-}
-
-.banner-caption:first-child:hover~.banner-caption:nth-child(2) {
-    left: 23.5vw;
+.banner-title:hover .banner-title-text:first-child {
+    left: 14.5vw;
     font-style: italic;
 }
-.banner-caption:first-child:hover {
-    left: 14.5vw;
+
+.banner-title:hover .banner-title-text:last-child {
+    left: 23.5vw;
     font-style: italic;
 }
