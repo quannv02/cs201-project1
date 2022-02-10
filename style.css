@@ -30,6 +30,7 @@ header {
     text-decoration: none;
     color: white;
     font-family: 'Inter', sans-serif;
+    user-select: none;
 }
 
 .logo h2 {
@@ -37,11 +38,13 @@ header {
     margin-left: 1.5vw;
     font-family: 'Inter', sans-serif;
     color: white;
+    user-select: none;
 }
 
 .nav ul {
     margin-top: 0.75vw;
     margin-right: 1.5vw;
+    user-select: none;
 }
 
 .hero {
@@ -66,6 +69,7 @@ header {
 
 img {
   max-width: 100%;
+  user-select: none;
 }
 
 .banner-wrapper {
@@ -81,6 +85,7 @@ img {
     position: absolute;
     top: 25vw;
     height: 21vw;
+    user-select: none;
 }
 
 .banner-title-text:first-child {
@@ -103,6 +108,7 @@ img {
     top: 63vw;
     left: 10vw;
     position: absolute;
+    user-select: none;
 }
 
 .banner-title:hover .banner-title-text:first-child {
