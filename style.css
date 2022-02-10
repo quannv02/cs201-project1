@@ -44,15 +44,20 @@ header {
     margin-right: 1.5vw;
 }
 
+.hero {
+    background-color: #1b1b1b;
+}
+
 .banner-image {
     display: flex;
     flex-wrap: nowrap;
 }
 
 .banner-image img {
-    width: 100%;
+    width: 35%;
+    margin-left: 35vw;
     height: auto;
-    filter: grayscale(1);
+    filter: grayscale();
 }
 
 img {
@@ -68,22 +73,40 @@ img {
 }
 
 .banner-caption:first-child {
-    position: absolute;
-    top: 22.5vw;
-    left: 9.5vw;
+    width: 100%;
+    top: 25vw;
+    left: 10vw;
+    transition: all 50ms;
 }
 
 .banner-caption:nth-child(2) {
-    position: absolute;
-    top: 32vw;
-    left: 35vw;
+    width: 100%;
+    top: 34.5vw;
+    left: 37.5vw;
+    transition: all 50ms;
 }
 
 .banner-caption:last-child {
     width: 80vw;
     font-size: 2vw;
     font-weight: 100;
-    position: absolute;
-    top: 62vw;
+    top: 63vw;
     left: 10vw;
+}
+
+.banner-caption {
+    position: absolute;
+}
+
+.banner-image img:hover {
+    filter: none;
+}
+
+.banner-caption:first-child:hover~.banner-caption:nth-child(2) {
+    left: 23.5vw;
+    font-style: italic;
+}
+.banner-caption:first-child:hover {
+    left: 14.5vw;
+    font-style: italic;
 }
