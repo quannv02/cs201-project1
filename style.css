@@ -1,20 +1,14 @@
 body {
   margin: 0;
-  background-color: #18191b;
 }
 
 header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 60px;
     z-index: 1;
-    background-color: #18191b;
-}
-
-.hero {
-  margin-top: 60px;
 }
 
 .header-wrapper {
@@ -75,14 +69,14 @@ img {
 
 .banner-caption:first-child {
     position: absolute;
-    top: 20.5vw;
-    left: 10.5vw;
+    top: 22.5vw;
+    left: 9.5vw;
 }
 
 .banner-caption:nth-child(2) {
     position: absolute;
-    top: 30vw;
-    left: 34vw;
+    top: 32vw;
+    left: 35vw;
 }
 
 .banner-caption:last-child {
