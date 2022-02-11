@@ -1,5 +1,6 @@
 body {
-  margin: 0;
+    margin: 0;
+    background-color: #1b1b1b;
 }
 
 header {
@@ -9,6 +10,10 @@ header {
     width: 100%;
     height: 60px;
     z-index: 1;
+}
+
+a {
+    text-decoration: none;
 }
 
 .header-wrapper {
@@ -27,7 +32,6 @@ header {
 }
 
 .nav ul li a {
-    text-decoration: none;
     color: white;
     font-family: 'Inter', sans-serif;
     user-select: none;
@@ -45,10 +49,6 @@ header {
     margin-top: 0.75vw;
     margin-right: 1.5vw;
     user-select: none;
-}
-
-.hero {
-    background-color: #1b1b1b;
 }
 
 .banner-image {
@@ -109,6 +109,7 @@ img {
     left: 10vw;
     position: absolute;
     user-select: none;
+    color: darkgrey;
 }
 
 .banner-title:hover .banner-title-text:first-child {
@@ -119,4 +120,100 @@ img {
 .banner-title:hover .banner-title-text:last-child {
     left: 23.5vw;
     font-style: italic;
+}
+
+.main-content-wrapper {
+    height: 37.5vw;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content-block {
+    width: 25vw;
+    height: 25vw;
+    background-color: rgba(38,38,38,1);
+    user-select: none;
+    transition: all 750ms;
+}
+
+.main-content-block h2 {
+    color: dimgrey;
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    font-size: 2vw;
+    text-align: center;
+    position: relative;
+    top: 11.5vw;
+}
+
+.main-content {
+    position: absolute;
+    top: 90vw;
+    left: 10vw;
+    width: 80%;
+    z-index: 1;
+}
+
+.main-content-block:hover {
+    background-color: rgba(43,43,43,0.5);
+}
+
+.main-content-block:hover .h2 {
+    color: darkgrey;
+}
+
+.base-layer {
+    z-index: 0;
+    top: 91.67vw
+}
+
+.main-content-block.only-image:first-child {
+    background-image: url(images/about-thumbnail.jpg);
+    background-size: cover;
+    filter: grayscale(1);
+}
+
+.main-content-block.only-image:nth-child(2) {
+    background-image: url(images/resume-thumbnail.jpg);
+    background-size: cover;
+    filter: grayscale(1);
+}
+
+.main-content-block.only-image:last-child {
+    background-image: url(images/contact-thumbnail.jpg);
+    background-size: cover;
+    filter: grayscale(1);
+}
+
+@media (max-width: 550px) {
+    .logo {
+        width: 100%;
+    }
+
+    .logo h2 {
+        margin-top: 2.5vw;
+        margin-bottom: -1vw;
+        margin-left: 0;
+        margin-right: 2.5vw;
+        text-align: center;
+        font-size: 19px;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .nav ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        justify-content: space-around;
+    }
+
+    .nav ul li {
+        font-size: 13px;
+    }
 }
