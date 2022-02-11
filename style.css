@@ -236,6 +236,10 @@ img {
         font-size: 4vw;
         top: 23vw;
     }
+
+    .main-content-wrapper {
+        height: 165vw;
+    }
 }
 
 @media (max-width: 400px) {
@@ -262,6 +266,7 @@ img {
     color: grey;
     text-align: center;
     font-size: 1.5vw;
+    user-select: none;
 }
 
 footer {
