@@ -188,18 +188,10 @@ img {
     filter: grayscale(1);
 }
 
-@media (max-width: 550px) {
-    .logo {
-        width: 100%;
-    }
-
+@media (max-width: 540px) {
     .logo h2 {
-        margin-top: 2.5vw;
-        margin-bottom: -1vw;
-        margin-left: 0;
-        margin-right: 2.5vw;
-        text-align: center;
         font-size: 19px;
+        margin-bottom: -2vw;
     }
 
     .nav {
@@ -207,13 +199,59 @@ img {
     }
 
     .nav ul {
-        display: flex;
+        overflow: auto;
         margin: 0;
         padding: 0;
-        justify-content: space-around;
     }
 
     .nav ul li {
-        font-size: 13px;
+        font-size: 10.5px;
+        margin: 2vw 0 0 1.5vw;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .main-content-block.only-image:first-child {
+        margin-top: 1.659vw;
+    }
+
+    .main-content-block.only-image:nth-child(2) {
+        margin-top: 3.318vw;
+    }
+
+    .main-content-block.only-image:last-child {
+        margin-top: 3.318vw;
+    }
+
+    .main-content-block {
+        width: 50vw;
+        height: 50vw;
+        margin-left: 14vw;
+    }
+
+    .main-content-block h2 {
+        font-size: 4vw;
+        top: 23vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .banner-image {
+        margin: 2vw 0vw 0vw 20vw;
+        width: 100%;
+    }
+
+    .banner-title {
+        margin-left: -4vw;
+    }
+
+    .banner-caption {
+        width: 21vw;
+        text-align: justify;
+        top: 46vw;
+        left: 34vw;
+        font-size: 9.5px;
     }
 }
