@@ -83,7 +83,7 @@ img {
     font-size: 10vw;
     font-weight: 900;
     position: relative;
-    margin-top: 4vw;
+    margin-top: 3vw;
 }
 
 .banner-title {
@@ -109,16 +109,6 @@ img {
 
 .darkgrey-text {
     color: darkgrey;
-}
-
-.banner-caption {
-    width: 80vw;
-    font-size: 2vw;
-    font-weight: 100;
-    top: 63vw;
-    left: 10vw;
-    position: absolute;
-    user-select: none;
 }
 
 .banner-title:hover .banner-title-text:first-child {
@@ -202,7 +192,7 @@ img {
 
 @media (max-width: 540px) {
     .logo h2 {
-        font-size: 19px;
+        font-size: 20px;
         margin-bottom: -2vw;
         margin-left: 9px;
     }
@@ -252,6 +242,10 @@ img {
     .main-content-wrapper {
         height: 165vw;
     }
+
+    .banner-wrapper {
+        margin-top: 9vw !important;
+    }
 }
 
 @media (max-width: 400px) {
@@ -264,12 +258,8 @@ img {
         margin-left: -4vw;
     }
 
-    .banner-caption {
-        width: 21vw;
-        text-align: justify;
-        top: 46vw;
-        left: 34vw;
-        font-size: 9.5px;
+    .banner-wrapper {
+        margin-top: 12vw !important;
     }
 }
 
@@ -446,4 +436,120 @@ footer {
 
 .gallery-container {
     height: 95vw;
+}
+
+.resume-banner {
+    position: absolute;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.resume-banner img {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.resume-element-wrapper {
+    position: absolute;
+    width: 100%;
+    font-family: 'Inter';
+}
+
+.edu {
+    top: 510px;
+}
+
+.exp {
+    top: 1310px;
+}
+
+.line {
+    display: flex;
+    flex-flow: wrap;
+    margin: 10px 20px 0 20px;
+    justify-content: space-around;
+}
+
+.resume-element-wrapper h2 {
+    text-align: center;
+    margin: 15px 0 0 0;
+    font-weight: 100;
+    letter-spacing: 15px;
+}
+
+.col-4 {
+    flex-basis: 25%;
+}
+
+.col-4 h3 {
+    margin: 0;
+}
+
+.col-4 p {
+    margin: 2px 0 8px 0;
+}
+
+.col-4-img {
+    width: 45vw;
+    height: 300px;
+}
+
+@media (max-width: 800px) {
+    .col-4-img {
+        width: 80vw;
+    }
+
+    .exp {
+        top: 2010px;
+    }
+
+    .resume-footer {
+        top: 3500px !important;
+    }
+}
+
+.resume-footer {
+    top: 2100px;
+}
+
+.ps-image {
+    background-image: url(images/primary-school.jpg);
+    background-size: cover;
+}
+
+.ms-image {
+    background-image: url(images/middle-school.jpg);
+    background-size: cover;
+}
+
+.hs-image {
+    background-image: url(images/high-school.jpg);
+    background-size: cover;
+}
+
+.u-image {
+    background-image: url(images/university.jpg);
+    background-size: cover;
+}
+
+.pts-image {
+    background-image: url(images/photoshop.jpg);
+    background-size: cover;
+}
+
+.ai-image {
+    background-image: url(images/illustrator.jpg);
+    background-size: cover;
+}
+
+.premiere-image {
+    background-image: url(images/premiere.jpg);
+    background-size: cover;
+}
+
+.programming-image {
+    background-image: url(images/programming.jpg);
+    background-size: cover;
 }
