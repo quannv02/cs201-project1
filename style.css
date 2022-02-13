@@ -246,6 +246,76 @@ img {
     .banner-wrapper {
         margin-top: 9vw !important;
     }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-rows: repeat(12, 1fr) !important;
+        height: 5000px !important;
+        top: 690px !important;
+    }
+
+    .img1 {
+        grid-column: 1 / 3 !important;
+        grid-row: 1 / 2 !important;
+    }
+
+    .img4 {
+        grid-column: 1 / 2 !important;
+        grid-row: 2 / 3 !important;
+    }
+
+    .img5 {
+        grid-column: 2 / 3 !important;
+        grid-row: 2 / 3 !important;
+    }
+
+    .img2 {
+        grid-column: 1 / 3 !important;
+        grid-row: 3 / 5 !important;
+    }
+
+    .img3 {
+        grid-column: 1 / 3 !important;
+        grid-row: 5 / 6 !important;
+    }
+
+    .img6 {
+        grid-column: 1 / 3 !important;
+        grid-row: 6 / 7 !important;
+    }
+
+    .img7 {
+        grid-column: 1 / 3 !important;
+        grid-row: 7 / 9 !important;
+    }
+
+    .img8 {
+        grid-column: 1 / 3 !important;
+        grid-row: 9 / 11 !important;
+    }
+
+    .img9 {
+        grid-column: 1 / 3 !important;
+        grid-row: 11 / 12 !important;
+    }
+
+    .img10 {
+        grid-column: 1 / 2 !important;
+        grid-row: 12 / 13 !important;
+    }
+
+    .img11 {
+        grid-column: 2 / 2 !important;
+        grid-row: 12 / 13 !important;
+    }
+
+    .bio-container {
+        top: 500px !important;
+    }
+
+    .about-footer {
+        top: 5710px !important;
+    }
 }
 
 @media (max-width: 400px) {
@@ -304,35 +374,32 @@ footer {
 }
 
 .bio {
-    width: 40vw;
-    height: 25vw;
-    position: absolute;
-    top: 60%;
-    left: 30%;
     background-color: rgba(255,255,255,0.975);
-    z-index: 1;
+    width: 320px;
+    height: 195px;
 }
 
 .gallery {
     width: 92.5%;
-    height: 90vw;
+    height: 1000px;
     position: absolute;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4 ,1fr);
     grid-gap: 0.25vw;
     left: 3.75%;
+    top: 600px;
 }
 
 .avatar {
-    position: absolute;
-    width: 7.5vw;
-    height: 7.5vw;
+    position: relative;
+    width: 59.28px;
+    height: 59.28px;
     background-image: url(images/avatar.jpg);
     background-size: contain;
     border-radius: 50%;
-    top: 2.25vw;
-    left: 2.5vw;
+    top: 17.784px;
+    left: -109.24px;
     filter: hue-rotate(45deg);
 }
 
@@ -343,30 +410,31 @@ footer {
 .avatar-title {
     font-family: 'Inter';
     font-weight: 500;
-    position: absolute;
+    position: relative;
 }
 
 .name {
-    top: 2.5vw;
-    left: 11vw;
-    word-spacing: -0.65vw;
-    font-size: 3vw;
+    top: -39.52px;
+    left: 90.944px;
+    word-spacing: -5.2px;
+    font-size: 23.7px;
+    text-align: start;
 }
 
 .job {
-    top: 6vw;
-    font-size: 2.5vw;
-    left: 11vw;
-    word-spacing: 0.25;
+    top: -39.5px;
+    font-size: 19.76px;
+    left: 90.944px;
     color: #855528;
+    text-align: start;
 }
 
 .info {
-    top: 11vw;
-    left: 3.5vw;
-    font-size: 2vw;
+    top: -23.7px;
+    left: 2px;
+    font-size: 15.8px;
     text-align: center;
-    line-height: 1.5vw;
+    line-height: 11px;
 }
 
 .img1 {
@@ -435,16 +503,18 @@ footer {
 }
 
 .gallery-container {
-    height: 95vw;
+    position: absolute;
+    width: 100%;
+    top: 600px;
 }
 
-.resume-banner {
+.subpage-banner {
     position: absolute;
     width: 100%;
     margin-top: 50px;
 }
 
-.resume-banner img {
+.subpage-banner img {
     position: relative;
     width: 100%;
     height: 450px;
@@ -510,6 +580,10 @@ footer {
     }
 }
 
+.about-footer {
+    top: 1630px;
+}
+
 .resume-footer {
     top: 2100px;
 }
@@ -552,4 +626,11 @@ footer {
 .programming-image {
     background-image: url(images/programming.jpg);
     background-size: cover;
+}
+
+.bio-container {
+    position: absolute;
+    width: 100%;
+    top: 400px;
+    text-align: -webkit-center;
 }
