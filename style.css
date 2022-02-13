@@ -634,3 +634,28 @@ footer {
     top: 400px;
     text-align: -webkit-center;
 }
+
+.contact-container {
+    position: absolute;
+    top: 500px;
+    width: 100%;
+    height: 600px;
+    text-align: -webkit-center;
+}
+
+.map {
+    position: relative;
+    width: 95vw;
+    top: 25px;
+}
+
+.contact-form {
+    position: relative;
+    top: 45px;
+    left: 50px;
+    width: 30%;
+}
+
+.contact-footer {
+    top: 1120px;
+}
